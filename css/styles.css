@@ -1,0 +1,121 @@
+
+:root{
+
+    --color-card2:hsl(0, 78%, 62%);
+    --color-card1: hsl(180, 62%, 55%);
+    --color-card3: hsl(34, 97%, 64%);
+    --color-card4: hsl(212, 86%, 64%);
+    --color-title-welcome:  hsl(234, 12%, 34%);
+    --color-info:  hsl(229, 6%, 66%);
+    --color-card:  hsl(0, 0%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    width: auto;
+    min-width: 300px;
+
+}
+.section-container{
+    width: auto;
+    max-width: 350px;
+    min-width: 310px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.div-welcome{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.welcome--title{
+    font-weight: 200;
+    font-size: 2.4rem;
+    color: var(--color-title-welcome);
+    margin-bottom: 16px;
+}
+.welcome--introduce{
+    font-size: 1.5rem;
+    color: var(--color-info);
+}
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section-cards .card{
+    max-width: 350px;
+    height: auto;
+    padding: 16px;
+    margin: 0 auto;
+    box-shadow: 0px 16px 18px -10px rgba(0,0,0,0.43);
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+.card-supervisor{
+    border-top: 3px var(--color-card1) solid;
+}
+.card-team{
+    border-top: 3px var(--color-card2) solid;
+}
+.card-karma{
+    border-top: 3px var(--color-card3) solid;
+}
+.card-calculator{
+    border-top: 3px var(--color-card4) solid;
+}
+
+.card--title{
+    font-size: 2.0rem;
+}
+.card--info{
+    font-size: 1.5rem;
+    color: var(--color-info);
+    margin-bottom: 16px;
+}
+.div--icono{
+    height: auto;
+    display: flex;
+    
+    justify-content:right;
+}
+.div--icono span{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div--icono .lupa{
+    background-image: url('../images/icon-supervisor.svg');
+}
+.div--icono .casa{
+    background-image: url('../images/icon-team-builder.svg');
+}
+.div--icono .idea{
+    background-image: url('../images/icon-karma.svg');
+}
+.div--icono .pc{
+    background-image: url('../images/icon-calculator.svg');
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
